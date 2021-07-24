@@ -1,1 +1,0 @@
-# nobuyaki.github.io
