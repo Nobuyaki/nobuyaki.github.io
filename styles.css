@@ -1,0 +1,45 @@
+.custom-btn {
+    position: relative;
+    height: 48px;
+    width: 240px;
+    display: flex;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 32px auto;
+    perspective: 240px;
+}
+
+.custom-btn .front,
+.custom-btn .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 400ms;
+    transform-origin: 50% 50% -24px;
+    border-radius: 4px;
+}
+
+.custom-btn .front {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(161,255,255,1) 11.3%, rgba(6,255,255,1) 41.2%, rgba(0,216,216,1) 77.8% );
+    color: #000;
+    transform: rotateX(0deg);
+}
+
+.custom-btn .back {
+    background-image: linear-gradient( 110.3deg,  rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+    color: #fff;
+    transform: rotateX(90deg);
+    backface-visibility: hidden;
+}
+
+.custom-btn:hover .front {
+    transform: rotateX(-90deg);
+}
+
+.custom-btn:hover .back {
+    transform: rotateX(0deg);
+} 
