@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      	<!--==================== ICON ====================-->
-        <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/72033395?v=4" />
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="styles.css">
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Nobuyaki | gatau</title>
+  	<link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+</head>
+<body>
+<main class="main">
+  	<audio id="music" preload="true">
+  		<source src="music.mp3">
+  	</audio>
+  	<button class="start">START<i class="uil uil-play"></i></button>
+  	<div id="body" class="body">
+  		<span id="typed2" class="description"></span>
+  	</div>
+</main>
+  
+  	<script src="typed.js"></script>
+  	<script>
+    const viewBtn = document.querySelector(".start"),
+    audio = document.getElementById('music'),
 
-        <title>Nobuyaki.github.io page</title>
-    </head>
-    <body>
-    <a href="https://github.com/Nobuyaki" target="_blank" class="custom-btn">
-        <span class="front">NOBUYAKI</span>
-        <span class="back">github account</span>
-    </a>
-    </body>
+    viewBtn.onclick = ()=>{
+      	audio.play();
+        viewBtn.style.display = "none";
+        
+        var typed2 = new Typed('#typed2', {
+     	strings: [
+     		"eh ada yang Ngeklick",
+     		"",
+     		"gua mau ngomong", 
+     		"I Love You",
+     		"tapi boong", 
+     		"eh, gajadi bohong", 
+     		"tapi bener",
+     		"beneran boong, hahaha", 
+     		"canda", 
+     		"kali ini bener",
+     		"I Love You Cantik"
+     	],
+     	typeSpeed: 100,
+     	backSpeed: 0,
+     	fadeOut: true
+     	});
+    }
+    </script>
+</body>
+</html>
