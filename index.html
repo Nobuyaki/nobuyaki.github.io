@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<title>Nobuyaki | COMING SOON</title>
-  	<link rel="stylesheet" href="styles.css">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-</head>
-<body>
-<main class="main">
-  	<audio id="music" preload="true">
-  		<source src="music.mp3">
-  	</audio>
-  	<button class="start"><i class="uil uil-play"></i></button>
-  	<div id="body" class="body">
-  		<span id="typed2" class="description"></span>
-  	</div>
-</main>
-  
-  	<script src="typed.js"></script>
-  	<script>
-    const viewBtn = document.querySelector(".start"),
-    audio = document.getElementById('music');
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="">
+    <meta name="author" content="Nobuyaki">
 
-    viewBtn.onclick = ()=>{
-      	audio.play();
-        viewBtn.style.display = "none";
-        
-        var typed2 = new Typed('#typed2', {
-     	strings: [
-     		"Hmmmm...",
-     		"Masih Kosong Bang",
-     		"Masih Dalam Proses Pembuatan", 
-     		"",
-     		"Bantu Join Server Dong Bang", 
-     		"", 
-     		"https://discord.gg/p683JCG"
-     	],
-     	typeSpeed: 100,
-     	backSpeed: 0,
-     	fadeOut: true
-     	});
-    }
-    </script>
+	<meta property="og:site_name" content="dimszyxx" />
+	<meta property="og:site" content="https://dimszyxx.is-a.dev" />
+	<meta property="og:title" content="dimszyxx"/>
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="assets/images/meta_banner.jpg" />
+	<meta property="og:type" content="portofolio" />
+
+    <title>dimszyxx</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="assets/images/favicon.png">
+</head>
+	<body data-spy="scroll" data-target=".fixed-top">
+  
+  	
+  	<section class="intro">
+  		<div class="inner">
+  			<div class="content">
+  				<section class="animate__animated animate__bounceInUp animate__delay-0s">
+  					<h1>DIMSZYXX</h1>
+  				</section>
+  				
+  				<section class="animate__animated animate__bounceInUp animate__delay-">
+  					<a class="btn" href="#">STARTED</a>
+  				</section>
+			</div>
+  		</div>
+  	</section>
+  	
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
 </body>
 </html>
