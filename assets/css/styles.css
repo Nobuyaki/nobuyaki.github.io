@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:500');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(../images/cloud.png) no-repeat 50% 50%;
+	background-size: cover;
+	display: table;
+	top: 0;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-bottom: 25%;
+}
+
+.content h1 {
+	font-family: 'Open Sans', sans-serif;
+	color: #f9f3f4;
+	font-size: 550%;
+	text-shadow: 3px 3px #098fa8;
+}
+
+.btn {
+	font-family: 'Poppins', sans-serif;
+	font-size: 150%;
+	text-decoration: none;
+	color: #098fa8;
+	border: 2px solid #098fa8;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+.btn:hover {
+	color: #156377;
+	border: 2px solid #156377;
+}
+
+@media (max-width: 768px) {
+	.content h1 {
+		font-size: 300%;
+	}
+	
+	.btn {
+		font-size: 100%;
+		padding: 7px 15px;
+	}
+}
